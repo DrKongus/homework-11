@@ -1,0 +1,44 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+
+  &__container {
+    gap: 40px;
+    display: flex;
+    align-items: center;
+  }
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__button {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @media screen and (max-width: 1200px) {
+      display: block;
+    }
+  }
+}
